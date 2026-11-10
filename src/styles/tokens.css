@@ -18,7 +18,9 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  :root { --ui-duration: 0ms; }
+  :root {
+    --ui-duration: 0ms;
+  }
 }
 
 .ui-visually-hidden {
