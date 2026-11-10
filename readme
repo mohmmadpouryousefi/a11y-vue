@@ -1,0 +1,8 @@
+### 1. Accessible UI component library
+
+A small, typed Vue component library: modal, combobox, tabs, toast, data table.
+
+- **Shows:** accessibility (WAI-ARIA, keyboard, focus management), component architecture, design systems
+- **Stack:** TypeScript,Vue , Storybook, Testing Library, Playwright, axe-core, GitHub Actions, published to npm
+- **Stand-out detail:** an accessibility test for every component that runs in CI
+- **Interview story:** "How I made a combobox screen-reader friendly"
