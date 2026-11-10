@@ -2,6 +2,7 @@ import { globalIgnores } from 'eslint/config'
 import { defineConfigWithVueTs, vueTsConfigs } from '@vue/eslint-config-typescript'
 import pluginVue from 'eslint-plugin-vue'
 import pluginVueA11y from 'eslint-plugin-vuejs-accessibility'
+import storybook from 'eslint-plugin-storybook'
 import skipFormatting from '@vue/eslint-config-prettier/skip-formatting'
 
 export default defineConfigWithVueTs(
@@ -11,6 +12,7 @@ export default defineConfigWithVueTs(
     'storybook-static/**',
     'playwright-report/**',
     'test-results/**',
+    '!.storybook',
   ]),
 
   pluginVue.configs['flat/recommended'],
@@ -30,6 +32,8 @@ export default defineConfigWithVueTs(
       'vue/require-explicit-emits': 'error',
     },
   },
+
+  ...storybook.configs['flat/recommended'],
 
   // Prettier owns formatting; turn off conflicting ESLint style rules.
   skipFormatting,

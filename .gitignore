@@ -11,3 +11,5 @@ test-results/
 !.vscode/settings.json
 .idea/
 *.tgz
+
+*storybook.log
