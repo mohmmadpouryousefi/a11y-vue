@@ -1,0 +1,34 @@
+/* Design tokens. Consumers override these custom properties to theme the library. */
+:root {
+  --ui-color-fg: #1a1a1a;
+  --ui-color-fg-muted: #5c5c5c;
+  --ui-color-bg: #ffffff;
+  --ui-color-surface: #f5f5f7;
+  --ui-color-border: #8a8a8a;
+  --ui-color-accent: #2f5bea;
+  --ui-color-danger: #c42b1c;
+  --ui-focus-ring: 0 0 0 3px color-mix(in srgb, var(--ui-color-accent) 45%, transparent);
+  --ui-radius: 6px;
+  --ui-space-1: 0.25rem;
+  --ui-space-2: 0.5rem;
+  --ui-space-3: 0.75rem;
+  --ui-space-4: 1rem;
+  --ui-font: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --ui-duration: 150ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --ui-duration: 0ms; }
+}
+
+.ui-visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
